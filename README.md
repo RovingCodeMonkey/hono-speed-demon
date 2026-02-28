@@ -10,7 +10,7 @@ A high-performance, low-cost API built with the "Golden Stack" principles.
 ## 🚀 Tech Stack
 
 - **Frontend:** React (Vite) hosted on S3 + CloudFront
-- **API:** Hono (Node.js) on AWS Lightsail ($3.50/mo)
+- **API:** Hono (Node.js) on AWS Lightsail ($5/mo)
 - **Database:** SQLite with Drizzle ORM (WAL Mode enabled)
 - **Deployment:** GitHub Actions + PM2 + Nginx
 
