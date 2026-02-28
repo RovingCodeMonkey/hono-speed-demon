@@ -1,0 +1,50 @@
+{
+  "name": "hono-speed-demon",
+  "version": "1.0.0",
+  "description": "Tinkering with a hono API and sqlLite",
+  "homepage": "https://github.com/RovingCodeMonkey/hono-speed-demon#readme",
+  "bugs": {
+    "url": "https://github.com/RovingCodeMonkey/hono-speed-demon/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RovingCodeMonkey/hono-speed-demon.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "esbuild src/index.ts --bundle --minify --platform=node --outfile=dist/index.js",
+    "start": "node dist/index.js",
+    "db:generate": "drizzle-kit generate",
+    "db:push": "drizzle-kit push",
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.19.9",
+    "@hono/node-ws": "^1.3.0",
+    "@hono/oauth-providers": "^0.8.5",
+    "better-sqlite3": "^12.6.2",
+    "dotenv": "^17.3.1",
+    "drizzle-orm": "^0.45.1",
+    "hono": "^4.12.3",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^25.3.2",
+    "drizzle-kit": "^0.31.9",
+    "esbuild": "^0.27.3",
+    "eslint": "^10.0.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-drizzle": "^0.2.3",
+    "jiti": "^2.6.1",
+    "prettier": "^3.8.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.56.1"
+  }
+}
